@@ -1,0 +1,441 @@
+/*----- Fonts ----*/
+@font-face{
+	font-family: Bbadr;
+	src:url(../fonts/BBADR.eot) format('eot'),
+		url(../fonts/BBADR.woff) format('woff'),
+		url(../fonts/BBADR.ttf) format('truetype');
+}
+@font-face{
+	font-family: Bkoodak;
+	src:url(../fonts/BKOODB.eot) format('eot'),
+		url(../fonts/BKOODB.woff) format('woff'),
+		url(../fonts/BKOODB.ttf) format('truetype');
+}
+@font-face{
+	font-family: Btitr;
+	src:url(../fonts/BTITRBD.eot) format('eot'),
+		url(../fonts/BTITRBD.woff) format('woff'),
+		url(../fonts/BTITRBD.ttf) format('truetype');
+}
+/*----- General Styles ----*/
+body{
+	direction: rtl;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,7db9e8+100 */
+background: rgb(30,87,153); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color: #cd2122;
+}
+.clear{
+	clear: both;
+}
+h1,h2,h3,h4,h5{
+	font-family: Bkoodak;
+}
+img{
+	border: 0;
+	max-width: 100%;
+}
+/*----- Main Styles ----*/
+
+#main{
+	width: 980px;
+	margin: 0 auto;
+	background: #fff;
+	box-shadow: -2px -2px 20px #ccc;
+}
+.top-bar{
+	background-color: #f26522;
+	height: 100px;
+	position: relative;
+}
+.socials ul{
+	margin-right: 40px;
+}
+.socials img{
+	height: 50px;
+	width: 50px;
+	float: right;
+	margin-left: 5px;
+	padding: 25px 0 0 2px;
+}
+.logo img{
+	margin-right: 80px;
+	margin-top: 20px;
+	background-color: #fff;
+}
+.search{
+	position: absolute;
+	background-color: #252525;
+	top: 36px;
+	left: 50px;
+}
+.search input{
+	width: 150px;
+    height: 34px;
+    border: 0;
+    background: #252525;
+    color: #dde1d5;
+    border-left: 1px solid #fff;
+    font-size: 20px;
+    font-family: Bkoodak;
+    padding-right: 10px;
+}
+.search .search-btn{
+	float: left;
+    width: 35px;
+    height: 36px;
+    background: url('../images/search-btn.png') no-repeat center center #ed1c24;
+}
+.top-menu{
+	height: 150px;
+	background-color: #111111;
+	position: relative;
+}
+.top-menu ul{
+	text-align: right;
+	margin-right: 10px;
+}
+.top-menu ul li{
+	list-style: none;
+	display: block;
+	float: right;
+	height: 150px;
+	margin-right: 10px;
+}
+.top-menu ul li a{
+	color: #fff;
+    font-family: Bkoodak;
+    font-size: 25px;
+    display: block;
+    height: 150px;
+   	padding-top: 53px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.top-menu ul li a:hover{
+	background-color: #d5dbe6;
+	color: #0096ff;
+	border-top: 5px solid #39b54a;
+}
+.top-menu ul li a.home{
+	background-color: #ebebeb;
+	color: #e3070c;
+	border-top: 5px solid #39b54a;
+	height: 146px;
+}
+.form1{
+	text-align: left;
+	position: absolute;
+	top: 15px;
+	left: 60px;
+}
+.form1 .username , .form1 .password{
+	display: block;
+	width: 166px;
+	height: 38px;
+	padding-right: 1px;
+	margin-top: 10px;
+	font-family: Bbadr;
+	font-size: 22px;
+	color: #757a74;
+	padding-top: 5px;
+	text-align: center;
+}
+.form1 .register{
+	position: absolute;
+    left: 180px;
+    top: 43px;
+    width: 94px;
+    height: 42px;
+    background: #32004b;
+    border: 0;
+    color: #31fd02;
+    font-size: 24px;
+    font-family: Bkoodak;
+    border-radius: 15px;
+}
+.slider{
+	height: 363px;
+	background: url('../images/slider.jpg') no-repeat center center;
+	position: relative;
+}
+.slide-navigation .slide-next{
+	background:url('../images/slide-next.png');
+	width: 88px;
+	height: 84px;
+	position: absolute;
+	right: 5px;
+	top: 142px;
+}
+.slide-navigation .slide-prev{
+	background:url('../images/slide-prev.png');
+	width: 88px;
+	height: 84px;
+	position: absolute;
+	left: 5px;
+	top: 142px;
+}
+.slide-select{
+	position: absolute;
+	right: 50px;
+	bottom: 20px;
+}
+.slide-select li{
+	background: #fff;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	float: right;
+	margin-left: 3px;
+}
+.slide-select li a{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+}
+.slide-select li a:hover{
+	background-color: #1eff00;
+	border-radius: 50%;
+}
+.slide-select li a.active{
+	background-color: #ed1c24;
+	border-radius: 50%;
+}
+.slide-text{
+	float: left;
+    width: 250px;
+    margin: 82px 0 0 130px;
+}
+.slide-text h2{
+	font-family: Btitr;
+    font-size: 20px;
+    color: #125bf0;
+    background: #fff;
+    width: 150px;
+    opacity: 0.8;
+    text-align: center;
+    border-radius: 15px;
+}
+.slide-text p{
+	color: #f6ff02;
+    background: #ed1c24;
+    width: 150px;
+    border-radius: 15px;
+    height:50px;
+    font-size: 23px;
+    text-align: center;
+    font-family: Bbadr;
+    margin-top: -30px;
+    padding-top: 30px;
+}
+.row3{
+	height: 340px;
+}
+.title{
+	width: 156px;
+    font-size: 33px;
+    border-radius: 15px;
+    border: 3px solid #39b54a;
+    margin-right: 410px;
+    text-align: center;
+    background: #440e62;
+    color: #fff;
+    margin-top: 14px;
+    margin-bottom: 10px;
+}
+.content{
+	text-align: center;
+}
+.content .box{
+	width: 33%;
+	float: right;
+	transition: 2s;
+}
+.content .box:hover{
+	transform: rotate(360deg);
+}
+.content .box img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 3px solid #fff602;
+}
+.content .box h3{
+	font-size: 30px;
+	color: #000;
+}
+.row4{
+	height: 340px;
+	background: #b7b7b7;
+	padding-bottom: 10px;
+}
+.newsletter{
+	float: right;
+	background-color: #007236;
+	width: 340px;
+	height: 310px;
+	margin-right: 50px;
+	margin-top: 20px;
+}
+.newsletter h2{
+	background: #111111;
+    color: #e19f12;
+    text-align: center;
+    font-size: 30px;
+}
+.newsletter form{
+	margin: 28px 50px 10px 10px;
+}
+.newsletter form input{
+	width: 210px;
+	height: 54px;
+	margin: 10px;
+	font-size: 20px;
+	text-align: center;
+	font-family: Bkoodak;
+}
+.save-btn{
+	    width: 104px;
+    height: 42px;
+    font-size: 24px;
+    font-family: Bkoodak;
+    background: #f26d7d;
+    border: 0;
+    color: #122ae1;
+    border-radius: 15px;
+    margin-right: 33%;
+}
+.login{
+	float: left;
+	background-color: #007236;
+	width: 340px;
+	height: 310px;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+.login h2{
+    color: #e19f12;
+    text-align: center;
+    font-size: 30px;
+    width: 115px;
+    height: 45px;
+    margin-right: 33%;
+    margin-top: 5px;
+    border-bottom: 3px solid #cd2122;
+}
+.login form{
+	margin: 28px 50px 10px 10px;
+}
+.login form input{
+	width: 210px;
+	height: 54px;
+	margin: 10px;
+	font-size: 20px;
+	text-align: center;
+	font-family: Bkoodak;
+}
+.login-btn{
+	width: 104px;
+    height: 42px;
+    font-size: 24px;
+    font-family: Bkoodak;
+    background: #4b0049;
+    border: 0;
+    color: #20ffbd;
+    border-radius: 15px;
+    margin-right: 33%;
+}
+footer{
+	height: 80px;
+	text-align: center;
+	background-color: #363636;
+}
+footer ul{
+	text-align: center;
+	display: inline-block;
+	margin-top: 10px;
+}
+footer ul li{
+	display: inline-block;
+	float: right;
+	margin-left: 10px;
+	border-left: 1px solid #fff;
+	padding-left: 10px;
+}
+footer ul li:last-child{
+	border-left: none;
+}
+footer ul li a{
+	color: #f6a905;
+	font-family: Bbadr;
+	font-size: 20px;
+}
+footer .copyright{
+	color: #e3e3e3;
+	margin-top: -5px;
+}
+@media screen and (max-width: 750px){
+	#main{
+		width: 100%;
+	}
+	.search{
+		display: none;
+	}
+	.logo img{
+		margin-right: 100px;
+	}
+	.top-menu form{
+		display: none;
+	}
+	.slide-text{
+		margin: 82px 0 0 80px;
+	}
+	.row3 .title{
+		margin-right: 40%;
+	}
+	.row4{
+		height: 850px;
+	}
+	.newsletter{
+		width: 560px;
+	    margin-right: 10%;
+	}
+	.row4 .newsletter form{
+   		margin: 18px 87px 10px 10px;
+	}
+	.row4 .newsletter form input{
+		width: 290px;
+	    height: 59px;
+	    margin-right: 10%;
+	}
+	.save-btn{
+	    margin-right: 40%;
+	}
+	.login{
+		width: 560px;
+	    margin-left: 13%;
+	}
+	.login h2{
+		margin-right: 40%;
+	}
+	.row4 .login form{
+   		margin: 18px 87px 10px 10px;
+	}
+	.row4 .login form input{
+		width: 290px;
+	    height: 59px;
+	    margin-right: 10%;
+	}
+	.login-btn{
+	    margin-right: 40%;
+	}
+}
